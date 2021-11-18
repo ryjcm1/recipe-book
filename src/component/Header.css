@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  height: 80px;
+  width: 100vw;
+  
+}
+
+.nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  padding-top: 20px;
+  margin-left: 35px;
+  list-style-type: none;
+  border-bottom: 3.5px solid rgb(34, 175, 29);
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: rgb(26, 20, 20);
+}
+
+
+
+.newAccountButton{
+    border: 2px solid rgb(34, 175, 29);
+    background-color: rgb(34, 175, 29);
+    color: #fff;
+    
+}
+
+.signInButton{
+    border: 2px solid rgb(34, 175, 29);
+    background: #fff;
+
+}
