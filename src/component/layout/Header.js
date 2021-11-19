@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./Header.css";
-import Button from "./UI/Button"
+import "./Header.css";
+import Button from "../UI/Button"
 
 const Header = () => {
   return (
@@ -20,7 +20,7 @@ const Header = () => {
         </li>
       </ul>
 
-      <div className={classes.button}>
+      <div >
         <Button className="newAccountButton">Create Account</Button>
         <Button className="signInButton">Sign in</Button>
       </div>
