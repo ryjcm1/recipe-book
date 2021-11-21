@@ -17,7 +17,6 @@
   margin-left: 35px;
   height: 40px;
   list-style-type: none;
-  border-bottom: 3.5px solid rgb(34, 175, 29);
 }
 
 .nav a {
@@ -26,15 +25,18 @@
   color: rgb(26, 20, 20);
 }
 
-.newAccountButton{
-    border: 2px solid rgb(34, 175, 29);
-    background-color: rgb(34, 175, 29);
-    color: #fff;
-    
+.newAccountButton {
+  border: 2px solid rgb(34, 175, 29);
+  background-color: rgb(34, 175, 29);
+  color: #fff;
 }
 
-.signInButton{
-    border: 2px solid rgb(34, 175, 29);
-    background: #fff;
+.signInButton {
+  border: 2px solid rgb(34, 175, 29);
+  background: #fff;
+}
 
+.nav li:hover {
+  border-bottom: 3.5px solid rgb(34, 175, 29);
+  transition: ease;
 }

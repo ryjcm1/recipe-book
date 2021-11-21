@@ -1,6 +1,7 @@
-import { Fragment } from "react/cjs/react.production.min";
+import React from "react";
 
-const DUMMY_DATA = [
+const RecipesContext = React.createContext({
+  recipes: [
     {
       id: 1,
       title: "pizza",
@@ -15,9 +16,9 @@ const DUMMY_DATA = [
       cookTime: 14,
       instructions:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    },{
-
-    id: 2,
+    },
+    {
+      id: 2,
       title: "bolognese",
       ingredients: [
         "celery",
@@ -28,7 +29,7 @@ const DUMMY_DATA = [
         "red wine",
         "tomato paste",
         "salt",
-        "pepper"
+        "pepper",
       ],
       prepTime: 20,
       cookTime: 180,
@@ -36,33 +37,22 @@ const DUMMY_DATA = [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     },
     {
-
       id: 3,
-        title: "roasted spatchcock chicken",
-        ingredients: [
-          "1 whole chicken",
-          "garlic",
-          "butter",
-          "thyme",
-          "salt",
-          "peper"
-        ],
-        prepTime: 15,
-        cookTime: 40,
-        instructions:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      },
-  ];
+      title: "roasted spatchcock chicken",
+      ingredients: [
+        "1 whole chicken",
+        "garlic",
+        "butter",
+        "thyme",
+        "salt",
+        "peper",
+      ],
+      prepTime: 15,
+      cookTime: 40,
+      instructions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    },
+  ],
+});
 
-
-const Recipes = () =>{
-    return(
-        <Fragment>
-            {DUMMY_DATA.map((recipe) => <div>{recipe.title}</div>)}
-        </Fragment>
-        
-    )
-}    
-
-
-export default Recipes
+export default RecipesContext
