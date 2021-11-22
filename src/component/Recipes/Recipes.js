@@ -1,4 +1,5 @@
 import { Fragment } from "react/cjs/react.production.min";
+import RecipeCard from "./RecipeCard";
 
 const DUMMY_DATA = [
     {
@@ -58,7 +59,7 @@ const DUMMY_DATA = [
 const Recipes = () =>{
     return(
         <Fragment>
-            {DUMMY_DATA.map((recipe) => <div>{recipe.title}</div>)}
+            {DUMMY_DATA.map((recipe) => <RecipeCard recipe={recipe}></RecipeCard>)}
         </Fragment>
         
     )
